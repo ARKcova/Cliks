@@ -10,15 +10,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     commentButtons.forEach(button => {
-        button.addEventListener("click", () => {
-            const commentBox = button.previousElementSibling;
-            const commentList = button.nextElementSibling;
-
-            if (commentBox.value.trim() !== "") {
-                const commentItem = document.createElement("li");
-                commentItem.textContent = commentBox.value;
-                commentList.appendChild(commentItem);
-                commentBox.value = ""; // Clear the textarea
+        button.addEventListener("click", (event) => {
+            const textarea = event.target.previousElementSibling;
+            if (textarea.value.trim() !== "") {
+                alert(`Comment posted: ${textarea.value}`);
+                textarea.value = ""; // Clear textarea
             }
         });
     });
