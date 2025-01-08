@@ -9,45 +9,58 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Kartikeya's Photography</h1>
-        <p>Explore my work and leave your feedback!</p>
+        <nav>
+            <h1>Kartikeya's Photography</h1>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hi, I'm Kartikeya, a passionate photographer capturing moments of life and nature. I love sharing my vision through the lens.</p>
-        </section>
+    <section id="hero">
+        <h2>Capturing Moments, One Click at a Time</h2>
+        <p>Welcome to my world of photography where every shot tells a story.</p>
+        <a href="#portfolio" class="btn">View My Work</a>
+    </section>
 
-        <section id="portfolio">
-            <h2>My Work</h2>
-            <div class="gallery">
-                <div class="photo-card">
-                    <img src="1.png" alt="Photo 1">
-                    <div class="interactions">
-                        <button class="like-btn">❤️ Like (<span class="like-count">0</span>)</button>
-                        <div class="comments">
-                            <textarea placeholder="Add a comment"></textarea>
-                            <button class="comment-btn">Comment</button>
-                            <ul class="comment-list"></ul>
-                        </div>
-                    </div>
+    <section id="about" class="content-section">
+        <h2>About Me</h2>
+        <p>Hi, I'm Kartikeya, a photographer from India. I specialize in capturing life's special moments, nature's beauty, and the essence of everyday life. Let's create memories together!</p>
+    </section>
+
+    <section id="portfolio" class="content-section">
+        <h2>My Portfolio</h2>
+        <div class="gallery">
+            <div class="photo-card">
+                <img src="photo1.jpg" alt="Photo 1">
+                <div class="overlay">
+                    <button class="like-btn">❤️ Like (<span class="like-count">0</span>)</button>
+                    <textarea placeholder="Leave a comment"></textarea>
+                    <button class="comment-btn">Post</button>
                 </div>
-                <div class="photo-card">
-                    <img src="4.png" alt="Photo 2">
-                    <div class="interactions">
-                        <button class="like-btn">❤️ Like (<span class="like-count">0</span>)</button>
-                        <div class="comments">
-                            <textarea placeholder="Add a comment"></textarea>
-                            <button class="comment-btn">Comment</button>
-                            <ul class="comment-list"></ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add more photos similarly -->
             </div>
-        </section>
-    </main>
+            <div class="photo-card">
+                <img src="photo2.jpg" alt="Photo 2">
+                <div class="overlay">
+                    <button class="like-btn">❤️ Like (<span class="like-count">0</span>)</button>
+                    <textarea placeholder="Leave a comment"></textarea>
+                    <button class="comment-btn">Post</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="content-section">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
 
     <footer>
         <p>&copy; 2025 Kartikeya. All Rights Reserved.</p>
