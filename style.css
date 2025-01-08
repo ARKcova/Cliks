@@ -2,25 +2,89 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
+    background: #f9f9f9;
 }
+
 header {
     background: #333;
-    color: white;
+    color: #fff;
     padding: 1rem;
     text-align: center;
 }
-nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-}
-section {
+
+main {
     padding: 2rem;
-    margin: 2rem 0;
 }
+
+section {
+    margin-bottom: 2rem;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.photo-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.photo-card img {
+    width: 100%;
+    display: block;
+}
+
+.interactions {
+    padding: 1rem;
+    text-align: center;
+}
+
+.like-btn, .comment-btn {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+textarea {
+    width: 90%;
+    height: 50px;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+}
+
+.comment-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.comment-list li {
+    background: #f1f1f1;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
 footer {
     background: #333;
-    color: white;
+    color: #fff;
     text-align: center;
     padding: 1rem;
+    margin-top: 2rem;
 }
