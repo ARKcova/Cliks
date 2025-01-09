@@ -5,65 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kartikeya's Photography</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <nav>
-            <h1>Kartikeya's Photography</h1>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Kartikeya's Photography</h1>
+        <p>Welcome to my portfolio! Explore my work below.</p>
     </header>
 
-    <section id="hero">
-        <h2>Capturing Moments, One Click at a Time</h2>
-        <p>Welcome to my world of photography where every shot tells a story.</p>
-        <a href="#portfolio" class="btn">View My Work</a>
-    </section>
-
-    <section id="about" class="content-section">
-        <h2>About Me</h2>
-        <p>Hi, I'm Kartikeya, a photographer from India. I specialize in capturing life's special moments, nature's beauty, and the essence of everyday life. Let's create memories together!</p>
-    </section>
-
-    <section id="portfolio" class="content-section">
-        <h2>My Portfolio</h2>
+    <main>
         <div class="gallery">
-            <div class="photo-card">
-                <img src="IMG_0125.JPG" alt="Photo 1">
-                <div class="overlay">
-                    <button class="like-btn">❤️ Like (<span class="like-count">0</span>)</button>
-                    <textarea placeholder="Leave a comment"></textarea>
-                    <button class="comment-btn">Post</button>
-                </div>
+            <div class="image-container">
+                <div class="photo" style="background-image: url('IMG_0125.JPG');"></div>
             </div>
-            <div class="photo-card">
-                <img src="IMG_0099.JPG" alt="Photo 2">
-                <div class="overlay">
-                    <button class="like-btn">❤️ Like (<span class="like-count">0</span>)</button>
-                    <textarea placeholder="Leave a comment"></textarea>
-                    <button class="comment-btn">Post</button>
-                </div>
+            <div class="image-container">
+                <div class="photo" style="background-image: url('IMG_0099.JPG');"></div>
+            </div>
+            <div class="image-container">
+                <div class="photo" style="background-image: url('photo3.jpg');"></div>
             </div>
         </div>
-    </section>
+        <p class="copyright-note">© Kartikeya's Photography. All rights reserved. Please do not use without permission.</p>
+    </main>
 
-    <section id="contact" class="content-section">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Kartikeya. All Rights Reserved.</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
