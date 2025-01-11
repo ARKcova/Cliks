@@ -22,4 +22,20 @@ document.addEventListener("DOMContentLoaded", () => {
             lightboxImg.src = "";
         }
     });
+
+    // Like Button Setup
+    const likeButtons = document.querySelectorAll(".like-btn");
+
+    likeButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const likeCount = button.querySelector(".like-count");
+            likeCount.textContent = parseInt(likeCount.textContent) + 1;
+        });
+    });
+});
+
+// Right-click Prevention
+document.addEventListener('contextmenu', function (event) {
+    event.preventDefault();
+    alert("Right-click is disabled to protect content.");
 });
