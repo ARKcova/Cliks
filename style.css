@@ -170,3 +170,26 @@ footer {
     color: #fff;
     cursor: pointer;
 }
+
+/* Like Button Styles */
+.like-btn {
+    display: block;
+    margin: 10px auto 0;
+    padding: 5px 10px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.like-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Adjust gallery container for like buttons */
+.image-container {
+    padding-bottom: 20px; /* Adjust to accommodate buttons */
+}
