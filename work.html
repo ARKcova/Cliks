@@ -1,11 +1,47 @@
-<section>
-    <h1>My Work</h1>
-    <div class="gallery">
-        <div class="image-container">
-            <div class="photo" style="background-image: url('assets/IMG_0125.JPG');"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work - Kartikeya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Kartikeya</a>
+            <ul class="nav-links">
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="work.html">My Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="report.html">Report</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="work-gallery">
+            <h1>My Work</h1>
+            <p>Explore my collection of photography. Click on any image to view it in detail!</p>
+            <div class="gallery">
+                <div class="image-container">
+                    <img src="assets/20241226_200129.jpg" alt="Photo 1">
+                </div>
+                <div class="image-container">
+                    <img src="assets/IMG_0099.JPG" alt="Photo 2">
+                </div>
+                <div class="image-container">
+                    <img src="assets/IMG_0125.JPG" alt="Photo 3">
+                </div>
+                <div class="image-container">
+                    <img src="assets/photo4.jpg" alt="Photo 4">
+                </div>
+            </div>
+        </section>
+        <div id="lightbox">
+            <span class="close-btn">&times;</span>
+            <img id="lightbox-img" src="" alt="Lightbox Image">
         </div>
-        <div class="image-container">
-            <div class="photo" style="background-image: url('asset/IMG_0099.JPG');"></div>
-        </div>
-    </div>
-</section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
